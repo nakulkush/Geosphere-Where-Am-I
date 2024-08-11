@@ -1,4 +1,4 @@
-# 🌍 Where Am I? - Location & Multi-Neighbour Finder App
+# 🌍 Where Am I? - Location & Multi-Neighbour Finder
 
 This web application identifies your current location and provides detailed information about your country and all its neighboring countries. It leverages the Geolocation API to get your position, reverse geocodes your coordinates into a human-readable address, and fetches country data from a REST API, including information about multiple neighboring countries.
 
