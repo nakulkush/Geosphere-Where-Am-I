@@ -1,17 +1,18 @@
-# 🌍 Where Am I? - Location Finder App
+# 🌍 Where Am I? - Location & Multi-Neighbour Finder App
 
-This is a simple web application that helps you determine your current location and provides detailed information about the country you're in. It leverages the Geolocation API to get your position, reverse geocodes your coordinates into a human-readable address, and fetches country data from a REST API.
+This web application identifies your current location and provides detailed information about your country and all its neighboring countries. It leverages the Geolocation API to get your position, reverse geocodes your coordinates into a human-readable address, and fetches country data from a REST API, including information about multiple neighboring countries.
 
 ## 📋 Features
 
-- **Geolocation:** Automatically retrieves the user's latitude and longitude using the Geolocation API.
-- **Reverse Geocoding:** Converts the geographic coordinates into a readable location (city, country) with BigDataCloud's Reverse Geocoding API.
-- **Country Information:** Fetches and displays key details about the user's country, including:
+- **Geolocation:** Retrieves the user's latitude and longitude using the Geolocation API.
+- **Reverse Geocoding:** Converts geographic coordinates into a readable location (city, country) with BigDataCloud's Reverse Geocoding API.
+- **Country & Multi-Neighbour Information:** Displays country information, including:
   - Flag
   - Population
   - Language
   - Currency
-- **Error Handling:** Manages potential errors, such as denied location access or API failures, and displays appropriate error messages.
+  - All Neighboring Countries
+- **Error Handling:** Manages potential errors such as location access denial or API failures and displays appropriate error messages.
 
 ## 🚀 Getting Started
 
@@ -35,7 +36,7 @@ You only need a web browser to run this application.
 
 1. Click the "Find My Location" button.
 2. Allow the browser to access your location.
-3. View detailed information about your current country.
+3. View detailed information about your current country and all neighboring countries.
 
 ## 🛠️ Technologies Used
 
@@ -43,7 +44,7 @@ You only need a web browser to run this application.
 - **Fetch API:** For making asynchronous requests to the reverse geocoding and country data APIs.
 - **Geolocation API:** To obtain the user's current geographic location.
 - **BigDataCloud Reverse Geocoding API:** For converting geographic coordinates into a readable address.
-- **REST API for Country Data:** Provides detailed information about the country based on its name.
+- **REST API for Country Data:** Provides detailed information about the country and its neighbors based on its name.
 
 ## 🤝 Contributing
 
