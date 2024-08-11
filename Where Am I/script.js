@@ -57,7 +57,20 @@ const whereAmI = async function () {
 
     const data = await res.json();
     console.log(data);
-    renderCountry(data[0]);
+    renderCountry(data[1]);
+    console.log(data);
+
+    for (let i = 0; i < data[1].borders.length; i++) {
+      const neighbour = data[1].borders?.[i];
+
+      const neiRes = await fetch(
+        `https://countries-api-836d.onrender.com/countries/alpha/${neighbour}`
+      );
+
+      const neiData = await neiRes.json();
+      console.log(neiData);
+      renderCountry(neiData, 'neighbour');
+    }
   } catch (err) {
     console.error(`${err} 💥`);
     renderError(`💥 ${err.message}`);
